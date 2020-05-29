@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-Medium.ttf');
+}
+
+body {
+    background-color: #FFF4EF;
+}
+
+h1 {
+    color: #e76f51;
+    text-align: center;
+}
+
+#functions {
+    display: flex;
+    justify-content: center; 
+}
+
+button {
+    cursor: pointer;
+}
+
+button#add-book-btn {
+    height: 30px;
+    width: 140px;
+    background-color: #00749E;
+    color: white;
+    font-size: 1em;
+    border-style: none; 
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-right: 20px; 
+}
+
+button#add-book-btn:focus,
+#filter:focus, 
+button.read:focus,
+button.unread:focus {
+    outline: none;
+}
+
+form  {
+    background-color: rgba(204, 194, 188, 0.705);
+    border-radius: 15px;
+    width: 350px;
+    padding: 25px 25px;
+    line-height: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    text-align: center; 
+    color: white;
+    border-radius: 5px; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+}
+
+.warning {
+    background-color: #be403c;
+}
+
+.success {
+    background-color: #3d9e86;
+}
+
+.label {
+    font-weight: bold;
+}
+
+input[type=text] {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px; 
+    background-color: white;
+}
+
+input[type=text]:focus:active {
+    outline-color: rgb(156, 153, 153);
+    background-color: white;
+}
+
+input[type=number] {
+    width: 75px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+label.checkbox, 
+input[type=checkbox] {
+    position: relative;
+    vertical-align: middle;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #00749E;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #00A9D4;
+
+}
+
+#filter, 
+option {
+    height: 30px;
+    width: 140px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    border-style: 1px solid #bed1da; 
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+#library {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 15px;
+    border-collapse: collapse;
+    background-color: white;
+    overflow-x: auto;
+}
+
+thead {
+    background-color: #e76f51;
+}
+
+th {
+    color: white; 
+    height: 35px; 
+}
+
+tr {
+    border-bottom: 1.3px solid #c2b5af; 
+}
+
+tr:last-of-type {
+    border-style: none;
+    
+}
+
+td {
+    padding: 10px;
+}
+
+#title-col {
+    border-top-left-radius: 15px;
+}
+
+#empty-col {
+    border-top-right-radius: 15px;
+}
+
+#empty-col img {
+    visibility: hidden;
+}
+
+.statusBtn {
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+button.read {
+    background-color: #2a9d8f;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+button.unread {
+    background-color: #e76f51;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.delete-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    transform: scale(1.1);
+}

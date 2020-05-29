@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/bookmark_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <div id="functions">
+            <div>
+                <button id="add-book-btn">+ Add Book</button>
+                <form action="" id="new-book-form" class="hidden">
+                    <!--VALIDATION MESSAGE-->
+                    <!-- <div class="alert success">Book Added</div> -->
+                    <!--Title-->
+                    <label class="label" for="title">Title</label>
+                    <input type="text" placeholder="Mindset" id="title" required>
+                    <!--Author-->
+                    <label class="label" for="author">Author</label>
+                    <input type="text" placeholder="Carol S. Dweck" id="author" required>
+                    <!--Pages-->
+                    <label class="label" for="pages">Pages:</label>
+                    <input type="number" placeholder="320" id="pages" min="1">
+                    <!--Status-->
+                    <label class="checkbox" for="read-status">Read</label>
+                    <input type="checkbox" id="read-status">
+                    <!--Add Button-->
+                    <input type="submit" id="add-btn" value="Add">
+                </form>
+            </div>
+            <select name="filter" id="filter">
+                <option value="" disabled selected hidden>Filter</option>
+                <option value="all" id="all">All</option>
+                <option value="Unread" id="unread-only">Unread only</option>
+                <option value="read" id="read-only">Read only</option>
+            </select>
+        </div>
+        <div id="library">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="title-col">Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                        <th id="empty-col"><img class="delete-icon" src="img/delete_icon.png"></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                    <!-- <tr>
+                        <td>Mindset</td>
+                        <td>Carol S. Dweck</td>
+                        <td>320</td>
+                        <td><button class="statusBtn read">Read</button></td>
+                        <td><img class="delete-icon" src="img/delete_icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>One Day</td>
+                        <td>David Nicholls</td>
+                        <td>437</td>
+                        <td><button class="statusBtn unread">Unread</button></td>
+                        <td><img class="delete-icon" src="img/delete_icon.png"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
